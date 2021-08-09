@@ -1,15 +1,21 @@
 body {
 	background-color: black;
 } 
+
 .image {
 	width: 100%;
 	height: 100%;
 }
 p {
-	width: 50%;
+	width: 75%;
 	color:  white;
 	font-size: 25px;
 	text-align: justify;
+	margin: auto;
+}
+h1 {
+	color: white;
+	font-size: 60px;
 }
 h2 {
 	color: white;
@@ -38,21 +44,35 @@ h2 {
 .child {
 	float: left;
 	margin: 100px;
+	width: 100%;
 }
 .child0 {
 	float: right;
+	width: 100%;
 }
 .image1 {
 	width: 100%;
 	height: 80%;
 }
 .site-footer {
-	  display: flex; 
-  align-items: center; 
-  justify-content: center; 
+	 display: flex; 
+	 align-items: center; 
+	 justify-content: center; 
+}
+footer {
+	margin: auto;
+    padding: 10px;
 }
 #footer-content {
-	background: brown;
+	background: gray;
+	width: 99%;
+}
+footer p {
+	color: black;
+	padding: 10px;
+	width: 50%;
+	text-align: center;
+	margin: auto;
 }
 
 
