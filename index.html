@@ -127,11 +127,18 @@
                 <label for="seats">Seats</label>
                 <input name="seats" type="text" readonly value="5">
             </div>
+
             <form action="GET">
-                <input type="text" value="Name">
-                <input type="text" value="Telefono" maxlength="8" minlength="8">
-                <input type="email" value="Email">
-                <textarea name="notas" id="notas" cols="30" rows="10">
+            <label for="nombre">
+                Nombre:
+            </label>
+                <input name="nombre" type="text" placeholder="Juanito Rodriguez">
+                <label for="telefono">Telefono:</label>
+                <input name="telefono" type="text" placeholder="+59178785465" value="+591" maxlength="12" minlength="12">
+                <label for="email">Email</label>
+                <input name="email" type="email" placeholder="juanito@example.com">
+                <label for="notas">Sugerencias:</label>
+                <textarea name="notas" id="notas" cols="30" rows="1">
 
                 </textarea>
 
@@ -145,7 +152,7 @@
         <br>
         <div class="mapa">
             <p>Donde nos encontramos</p>
-            <img src="https://res.cloudinary.com/dt7qqtoem/image/upload/v1628305202/huminta_zy0ltb.jpg" alt="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15230.207135119437!2d-66.20101865000001!3d-17.3852878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbo!4v1628555007562!5m2!1sen!2sbo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
         <div class="menu">
             <div class="navegador">

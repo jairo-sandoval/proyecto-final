@@ -3,13 +3,16 @@ img{
     width: 350px;
 }
 
-a {
-    text-decoration: none;
-    color: white;
-}
-
 .container section{
     display: block;
+    position: relative;
+}   
+
+.container section p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .primer {
@@ -18,10 +21,6 @@ a {
     background-color: black;
     text-align: center;
 } 
-
-.primer p{
-    text-align: center;
-}
 
 .primer img{
     width: 100%;
@@ -36,6 +35,14 @@ a {
 
 .segundo img{
     background-color: white;
+    width: 100%;
+}
+
+.segundo blockquote{
+    height: 908px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .platillos{
@@ -51,6 +58,7 @@ a {
     font-size: 1.2rem;
 
 }
+
 
 
 
@@ -90,6 +98,10 @@ article p {
     animation: moving 2s infinite;
 }
 
+.reservas p{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
 
 form{
     display: block;
@@ -103,6 +115,33 @@ form{
     padding-left: 10px;
 }
 
+form{
+    padding-left: 50px;
+}
+
 form input{
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 8px;
+    background-color: rgb(207, 221, 226);
+}
+
+form label{
+    padding-left: 50px;
     display: block;
+}
+
+textarea{
+    display: inline-block;
+    margin-left: 50px;
+    border-radius: 8px;
+    background-color: rgb(30, 159, 210);
+    color: white;
+}
+
+input[type="submit"]{
+    display: inline-block;
+    margin-left: 50px;
+
 }
