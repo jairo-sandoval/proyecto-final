@@ -1,0 +1,108 @@
+/*body de index.html*/
+img{
+    width: 350px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.container section{
+    display: block;
+}
+
+.primer {
+    column-count: 2;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+} 
+
+.primer p{
+    text-align: center;
+}
+
+.primer img{
+    width: 100%;
+}
+
+.segundo{
+    column-count: 2;
+    background-color: black;
+    text-align: center;
+    width: 100%;
+}
+
+.segundo img{
+    background-color: white;
+}
+
+.platillos{
+    background-image: url(https://res.cloudinary.com/dt7qqtoem/image/upload/v1628303696/fondo_nf9bbc.jpg);
+    background-size: 100%;
+    height: 1200px;
+    position: relative;
+}
+
+.platillos p{
+    position: relative;    
+    text-align: center;
+    font-size: 1.2rem;
+
+}
+
+
+
+article{
+    width: 30%;
+    display: inline-block;
+    color: black;
+    
+} 
+
+article img{
+    border-radius: 12px;
+}
+
+
+
+article p {
+    position: relative;
+    text-align: center;
+    width: 60%;
+}
+
+.huminta{
+    display: block;
+    position: relative;
+    left: 40%;
+}
+
+#hidden{
+    display: none;
+}
+#hov:hover + #hidden{
+    /*add a scrool por el */
+    top: -20px;
+    display: block;
+    -webkit-animation: moving 2s infinite;
+    animation: moving 2s infinite;
+}
+
+
+form{
+    display: block;
+}
+
+.actual{
+    text-align: center;
+}
+
+.actual label {
+    padding-left: 10px;
+}
+
+form input{
+    display: block;
+}

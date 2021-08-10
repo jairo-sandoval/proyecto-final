@@ -6,77 +6,132 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurante</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
     <header>
-        <img src="#" alt="imagen de fondo">
         <h1>Restaurante</h1>
         <p>Los mejores platillos del pais</p>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Quienes somos</a></li>
-            <li><a href="#">Reservas</a></li>
-            <li><a href="#">Menu</a></li>
-        </ul>
-    </nav>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Quienes somos</a></li>
+                <li><a href="#">Reservas</a></li>
+                <li><a href="#">Menu</a></li>
+            </ul>
+        </nav>
 
     <main>
         <div class="container">
-            <section>
+            <section class="primer">
 
-                <img src="#" alt="imagen 1">
-                <p>Quienes somos</p>
-                <p>Somos un restaurante destacado por su calidad.</p>
+                <img src="https://res.cloudinary.com/dt7qqtoem/image/upload/v1628303575/prueba_km3at4.jpg"
+                    alt="imagen 1">
+                <div class="primera">
+
+                    <p>Quienes somos</p>
+                    <p>Somos un restaurante destacado por su calidad.</p>
+                </div>
             </section>
 
-            <section>
+            <section class="segundo">
+                <blockquote>
+                    <!--una resena sobre el restaurante -->
+                    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, culpa dolorum eveniet cupiditate fugiat in reprehenderit natus blanditiis delectus autem, voluptatum veritatis excepturi distinctio nisi, exercitationem magnam repellat libero nam?"
+                </blockquote>
+                <img src="https://res.cloudinary.com/dt7qqtoem/image/upload/v1628536004/user_xm5z8z.svg" alt="un critico">
+            </section>
 
-                <p>nuestros platillos principales</p>
+            <section class="platillos">
 
+                <p>Nuestros platillos principales</p>
+                <!-- <img src="https://res.cloudinary.com/dt7qqtoem/image/upload/v1628303696/fondo_nf9bbc.jpg" alt="imagen2"> -->
+                <!--puede ser un color mas como fondo en vez de una imagen tan normal-->
                 <div class="mejoresPlatillos">
-                    <div>
-                        <p>silpancho</p>
-                        <img src="#" alt="silpancho">
-
-                    </div>
-                    <div>
-                        <p>milanesa</p>
-                        <img src="#" alt="milanesa">
-
-                    </div>
-                    <div>
+                    <article>
                         <p>pollo al horno</p>
-                        <img src="#" alt="pollo al horno">
-                    </div>
-                    <div>
-                        <p>fricase</p>
-                        <img src="#" alt="fricase">
+                        <div id="hov">
 
-                    </div>
+                            <img src="https://res.cloudinary.com/dt7qqtoem/image/upload/v1628304484/polloalhorno_jlppxb.jpg"
+                            alt="pollo al horno">
+                        </div>
+                        <div id="hidden">
+
+                            <p><i>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident laboriosam cum mollitia necessitatibus vel quo architecto sunt possimus totam non quis veniam ad, magni quibusdam suscipit error sed recusandae nostrum.</i></p>
+                        </div>
+
+                    </article>
+                    <article>
+                        <p>silpancho</p>
+                        <div id="hov">
+
+                            <img src="https://res.cloudinary.com/dt7qqtoem/image/upload/v1628456283/Silpancho_sv4dln.jpg"
+                            alt="silpancho">
+                        </div>
+                        <div id="hidden">
+
+                            <p><i> El silpancho es una típica y contundente preparación originaria de Cochabamba, ciudad de
+                                Bolivia, aunque hoy en día podemos encontrarla en todo el país debido a su
+                                popularidad.</i></p>
+                        </div>
+                    </article>
+                    <article>
+                        <p>fricase</p>
+                        <div id="hov">
+
+                            <img src="https://res.cloudinary.com/dt7qqtoem/image/upload/v1628304268/sopaBol_axgxu2.jpg"
+                            alt="fricase">
+                        </div>
+                        <div id="hidden">
+
+                            <p><i> El fricasé (del francés fricassée) es un plato tradicional originario de Francia, que
+                                consiste en un guiso de carne blanca en trozos con verduras, espesado con una salsa
+                                blanca.</i>
+                            </p>
+                        </div>
+                    </article>
+                    <article class="huminta">
+                        <p>huminta</p>
+                        <div id="hov">
+
+                            <img src="https://res.cloudinary.com/dt7qqtoem/image/upload/v1628305202/huminta_zy0ltb.jpg"
+                            alt="huminta">
+                        </div>
+                            <div id="hidden">
+
+                            <p><i> Las humitas o humintas (del quechua: jumint'a) son un alimento de origen andino, son
+                                típicas
+                                de Argentina, Bolivia, Chile, Ecuador y el Perú. La receta de la huminta ha ido
+                                modificándose y adaptándose a los productos de cada región, manteniendo como ingrediente
+                                principal el grano de choclo.</i></p>
+                        </div>
+                    </article>
                 </div>
             </section>
 
         </div>
         <div class="reservas">
+            <!--en vez de una pantalla negra un fondo de una imagen  dentro de todo que haga resaltar la tabla de reservas-->
             <p>Tabla de reservas</p>
             <hr>
             <div class="actual">
-                <label for="">Date</label>
-                <input type="text" readonly value="">
-                <label for="">Time</label>
-                <input type="text" readonly value="">
-                <label for="">Seats</label>
-                <input type="text" readonly value="">
+                <label for="date">Date</label>
+                <input name="date" type="date" readonly value="08-08-2021">
+                <label for="time">Time</label>
+                <input name="time" type="time" readonly value="15:25">
+                <label for="seats">Seats</label>
+                <input name="seats" type="text" readonly value="5">
             </div>
             <form action="GET">
                 <input type="text" value="Name">
-                <input type="number" value="Telefono">
+                <input type="text" value="Telefono" maxlength="8" minlength="8">
                 <input type="email" value="Email">
-                <textarea name="notas" id="notas" cols="30" rows="10" >
+                <textarea name="notas" id="notas" cols="30" rows="10">
 
                 </textarea>
 
@@ -86,23 +141,50 @@
     </main>
 
     <footer>
-        <p>Restaurante</p>
+        <p class="titulo">Restaurante</p>
         <br>
-        <section>
-            <p>DOnde nos encontramos</p>
-            <img src="#" alt="mapa">
-        </section>
-        <a href="#">Quienes somos</a>
-        <a href="#">Menu</a>
-        <p>Telefono de contacto: +123 99999999</p>
-        <section>
-            <p>nuestras redes sociales</p>
-            <div class="redes">
-                <a href="#"><img src="#" alt="facebook"></a>
-                <a href="#"><img src="#" alt="twitter"></a>
-                <a href="#"><img src="#" alt="instagram"></a>
+        <div class="mapa">
+            <p>Donde nos encontramos</p>
+            <img src="https://res.cloudinary.com/dt7qqtoem/image/upload/v1628305202/huminta_zy0ltb.jpg" alt="mapa">
+        </div>
+        <div class="menu">
+            <div class="navegador">
+                <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Quienes somos</a></li>
+                <li><a href="#">Reservas</a></li>
+                <li><a href="#">Menu</a></li>
+                </ul>
             </div>
-        </section>
+            
+            <p>Contactanos</p>
+            <span class="contacto">
+
+                <p>Email:</p> <a href="emailto:example@example.com">example@example.com</a>
+            </span>
+            <span class="contacto">
+
+                <p>Telefono:</p> <a href="tel:99999999">+123 99999999</a>
+            </span>
+            <span class="contacto">
+                <p>Direccion:</p>
+                <a href="#">Av. X entre Av. Y y Calle Z Nro 10, Cochabamba Bolivia</a>
+            </span>
+            <section>
+                <p>Encuentranos en:</p>
+                <div class="redes">
+                    <a href="https://www.facebook.com/" target="_blank"><img
+                        src="https://res.cloudinary.com/dt7qqtoem/image/upload/v1624737155/facebook_a3ydxo.svg"
+                        alt="facebook"></a>
+                    <a href="https://twitter.com/" target="_blank"><img
+                        src="https://res.cloudinary.com/dt7qqtoem/image/upload/v1624737155/twitter_vfdl1m.svg"
+                        alt="twitter"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img
+                        src="https://res.cloudinary.com/dt7qqtoem/image/upload/v1624737155/instagram_qjmkac.svg"
+                        alt="instagram"></a>
+                   </div>
+            </section>
+        </div>
     </footer>
 </body>
 
