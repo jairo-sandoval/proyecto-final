@@ -79,6 +79,7 @@ article p {
     position: relative;
     text-align: center;
     width: 60%;
+    /*z index*/
 }
 
 .huminta{
@@ -103,12 +104,15 @@ article p {
     font-weight: 600;
 }
 
+
+/*mover abajo los valores estaticos*/
 form{
     display: block;
 }
 
 .actual{
     text-align: center;
+    margin: 20px;
 }
 
 .actual label {
@@ -143,5 +147,6 @@ textarea{
 input[type="submit"]{
     display: inline-block;
     margin-left: 50px;
+    padding: auto;
 
 }
