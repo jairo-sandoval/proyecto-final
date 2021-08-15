@@ -1,41 +1,81 @@
-/*estilos iniciales de todas las paginas, cada una tendra su propia estilizacion si esq lo necesita */
+body {
+	background-color: black;
+	overflow: visible;
+} 
 
-html{
-    font-family: Helvetica;
-    color: white;
-    font-size: 20px;
+.image {
+	width: 100%;
+	height: 100%;
 }
-
-a {
-    text-decoration: none;
-    color: white;
+p {
+	width: 75%;
+	color:  white;
+	font-size: 25px;
+	text-align: justify;
+	margin: auto;
 }
-
-body{
-    background-color: #454040;
-    position: relative;
-    padding: 0%;
-    border: 0%;
-    margin: 0%;
+h1 {
+	color: white;
+	font-size: 60px;
+	text-align: center;
+	margin: auto;
 }
+h2 {
+	color: white;
+	font-size: 40px;
+}
+/*
+.title { 
+    width: 100%;
+    height: 400px;
+    background-image: url("img/title.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+	text-align: center;  
+	padding: 10px;  
+	border: 5px solid gray;  
+}
+*/
 
+/*
+.site-footer {
+	 display: flex; 
+	 align-items: center; 
+	 justify-content: center; 
+}
+footer {
+	margin: auto;
+    padding: 10px;
+}
+#footer-content {
+	background: gray;
+	width: 99%;
+}
+footer p {
+	color: black;
+	padding: 10px;
+	width: 50%;
+	text-align: center;
+	margin: auto;
+}
+*/
 /*header*/
 header{
     background-image: url(https://res.cloudinary.com/dt7qqtoem/image/upload/v1628303941/header_fnzjup.jpg) ;
     background-size: 100%;
     height: 250px;
     position: relative;
+    text-align: center;
 }
 
 header h1{
-    color: rgb(22, 172, 218);
+    color: white
     position: absolute;
     font-size: 3rem;
     font-weight: 600;
     margin: 0%;
-    padding-left: 20px;
+    text-align: center;
 }
-
 header p{
     position: absolute;
     font-size: 2rem;
@@ -71,6 +111,12 @@ nav li:hover{
     background-color: #383333;
 }
 
+
+html {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: white;
+    font-size: 20px;
+}
 /*footer*/
 footer {
     position: relative;
@@ -79,7 +125,7 @@ footer {
 
 
 footer  img{
-    width: 35px;
+    width: 25px;
 }
 
 
@@ -100,8 +146,8 @@ footer  img{
 }
 
 
-.mapa iframe{
-    margin-bottom: 20px;
+.mapa img{
+    width: 40%;
 }
 
 .mapa p{
@@ -154,4 +200,38 @@ span a{
 
 .navegador li{
     padding-bottom: 10px;
+}
+/*body*/
+
+.chef {
+	display: flex;
+}
+.chef-img {
+	float: left;
+}
+.chefs {
+	float: right;
+	margin-top: 50px;
+	margin-right: 100px;
+	margin-left: 100px;
+	margin-bottom: 0px;
+}
+.container {
+	margin: 0px;
+}
+.father {
+	display: flex;
+}
+.child {
+	float: left;
+	margin: 100px;
+	width: 100%;
+}
+.child0 {
+	float: right;
+	width: 100%;
+}
+.image1 {
+	width: 100%;
+	height: 80%;
 }
