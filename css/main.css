@@ -107,7 +107,6 @@ article img{
 
 article p {
     text-align: center;
-    width: 60%;
     /*z index*/
 }
 
@@ -117,9 +116,6 @@ article p {
     left: 40%;
 }
 
-#hidden{
-    display: none;
-}
 #hov:hover + #hidden{
     /*add a scrool por el */
     z-index: -50%;
