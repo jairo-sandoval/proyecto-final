@@ -1,6 +1,12 @@
 /*body de index.html*/
 img{
-    width: 350px;
+    width: 50%;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
 }
 
 .container section{
@@ -26,6 +32,26 @@ img{
     width: 100%;
 }
 
+.primer p{
+    text-align: center;
+    text-align: justify;
+    padding: 50px;
+}
+
+.primer img{
+    width: 100%;
+}
+
+.primera h3{
+    padding-top: 70px;
+    font-size: 30px;
+}
+
+.primera p{
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
 .segundo{
     column-count: 2;
     background-color: black;
@@ -33,16 +59,18 @@ img{
     width: 100%;
 }
 
-.segundo img{
-    background-color: white;
-    width: 100%;
+.segundo h3{
+    padding: 20px;
 }
 
-.segundo blockquote{
-    height: 908px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.segundo p{
+    font-family: 'Times New Roman', Times, serif, cursive;
+    font-style: italic;
+    padding: 20px;
+}
+
+.segundo img{
+    width: 100%;
 }
 
 .platillos{

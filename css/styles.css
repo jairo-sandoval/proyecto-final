@@ -13,57 +13,94 @@ a {
 
 body{
     background-color: #454040;
-    position: relative;
     padding: 0%;
-    border: 0%;
     margin: 0%;
 }
 
 /*header*/
 header{
     background-image: url(https://res.cloudinary.com/dt7qqtoem/image/upload/v1628303941/header_fnzjup.jpg) ;
-    background-size: 100%;
-    height: 250px;
-    position: relative;
+    width: 100%;
+    height: 500px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: auto;
+    text-align: center;
+}
+
+header::before{
+    content: "";
+    width: 100%;
+    height: 500px;
+    background-color: #333;
+    position: absolute;
+    opacity: 0.7;
 }
 
 header h1{
+    position: relative;
+
     color: rgb(22, 172, 218);
-    position: absolute;
     font-size: 3rem;
     font-weight: 600;
-    margin: 0%;
     padding-left: 20px;
 }
 
 header p{
-    position: absolute;
+    position: relative;
     font-size: 2rem;
-    top: 50%;
-    left: 70%;
 }
+
 
 /*navbar*/
-nav ul{
-    list-style: none;
-    padding: 0px;
-    margin: 0px;
-}
-/*debe ser sitcky */
-nav {
-    position: -webkit-sticky;
+
+nav{
+    width: 100%;
+    background: #333; 
     position: sticky;
-    margin: 0px;
-    padding: 0px;
+    top: 0;
+    z-index: 1;
+    transition: .5s;
+    justify-content: space-between;
+} 
+
+
+nav ul{
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    list-style: none;
 }
 
-nav li {
-    float: left;
+nav ul li {
     width: 25%;
+    font-size: 20px;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+    letter-spacing: 1px;
+    line-height: 80px;
+    transition: all 300ms;
+    border-left: 1px solid #fff;
+}
+
+
+nav li:first-child{
+    border-left: none;
+}
+
+nav li a {
+    text-decoration: none;
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 5px;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    color: white;
 }
 
 nav li:hover{

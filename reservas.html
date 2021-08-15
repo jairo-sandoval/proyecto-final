@@ -49,7 +49,7 @@
                 </div>
                 <div class="pedido">
                     <p>Pedido</p>
-                    <select name="" id="elige" onchange=selectFunction()>
+                    <select name="" id="elige" onchange="selectFunction(event)">
                         <option disabled selected>Elige una opcion</option>
                         <option value="20">Milanesa</option>
                         <option value="25">Silpancho</option>
@@ -58,13 +58,13 @@
                         <option value="15">Fricase</option>
                         <option value="25">Pollo al horno</option>
                     </select>
-                    <input id="numero" type="number" min="1" value="1" max="20">
-                    <input id="precioU" name="precioU" type="text" value="0.0">
+                    <input id="numero" type="number" min="1" value="0" max="20" onchange="selectorPT(event)">
+                    <input id="precioU" name="precioU" type="text" value="0.0" readonly>
                     <input id="precioT" name="precioT" type="text" value="0.0" readonly>
-                    <input type="button" value="agregar" id="agregar">
+                    <input type="button" value="agregar" id="agregar" onclick="agregacion(event)">
                 </div>
                 <label for="total">total</label>
-                <input id="total" type="text" value="0.0" readonly>
+                <input id="total" type="text" value="0" readonly>
                 <hr>
                 <label for="">Reservar mesa</label>
                 <label for="">si</label>
@@ -125,22 +125,32 @@
         </div>
     </footer>
     <script>
-        //selectFunction()
-
-        function seleccionarPU(e) {
-            console.log(e.target)
+        var aux;
+        function selectFunction(e) {
+            document.getElementById('precioU').value = e.target.value
         }
-        var section = document.getElementById('number')
-        section.addEventListener("change", function(e) {
-            console.log(e.target.value)
-        });
-        var form1 = document.getElementById('agregar')
-        form1.addEventListener('submit', function (e) {
-            e.preventDefault()
-            var sel = document.getElementById("elige");
-            var texto = sel.options[sel.selectedIndex].text;
-            ms.innerHTML = "LISTA:  <p>" + texto + "</p>"
-        })
+        function selectorPT(e) {
+            document.getElementById('precioT').value = parseInt(document.getElementById('precioU').value)
+                * parseInt(document.getElementById('numero').value)
+        }
+
+        function agregacion(e) {
+            if (parseInt(document.getElementById('precioT').value) != 0) {
+                aux = parseInt(document.getElementById('total').value)
+                var sel = document.getElementById("elige")
+                var texto = sel.options[sel.selectedIndex].text
+                var ms = document.getElementById('mensaje')
+                ms.innerHTML += "<p>" + texto + ", cant:" +
+                    document.getElementById('numero').value + ", precio u:" +
+                    document.getElementById('precioU').value + "Bs, precio t:" +
+                    document.getElementById('precioT').value + "Bs</p>"
+                document.getElementById('total').value = parseInt(document.getElementById('total').value)
+                    + parseInt(document.getElementById('precioT').value)
+            } else {
+                alert("Debe realizar un pedido correcto")
+            }
+
+        }
     </script>
 </body>
 
