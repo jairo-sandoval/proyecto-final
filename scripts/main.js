@@ -62,6 +62,4 @@ const newMap = Comidas.map(item => {
 
 map.innerHTML = newMap
 
-// login 
-
 

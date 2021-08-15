@@ -34,6 +34,22 @@
             repellat praesentium esse ex reiciendis?</p>
         <div class="container">
             <p class="tabla">Reservaciones</p>
+
+            <div id="new_messaje">
+
+            </div>
+            <form id="register-form"> 
+                <input id="name" type="text" placeholder="Nombre de usuario"/>
+                <input id="pw" type="password" placeholder="Contraseña"/>
+                <button type="submit" >Crear cuenta</button> 
+            </form>
+    
+            <form id="login-form"> 
+                <input id="userName" type="text" placeholder="Nombre de usuario" value=""/>
+                <input id="userPw" type="password" placeholder="Contraseña" value=""/>
+                <button type="submit" >Login</button> 
+           </form>
+
             <form id="form">
                 <div class="nombre">
                     <label for="nombre">Nombre:</label>
@@ -159,6 +175,40 @@
             }
 
         }
+
+        
+        var login = document.getElementById('login-form');
+        var register = document.getElementById('register-form');
+        var messaje = document.getElementById('new_messaje');
+
+
+        register.addEventListener('submit', function(e){
+            e.preventDefault()
+            var name = document.getElementById('name');
+            var password = document.getElementById('pw');
+            
+            localStorage.setItem('name', name.value);
+            localStorage.setItem('password', password.value);
+        })
+
+        login.addEventListener('submit', function(e){
+            e.preventDefault()
+            var storedName = localStorage.getItem('name');
+            var storedPw = localStorage.getItem('password');
+
+            var userName = document.getElementById('userName');
+            var userPw = document.getElementById('userPw');
+
+            
+            if(userName.value == storedName && userPw.value == storedPw) {
+                messaje.innerHTML = `Bienvenido ${storedName}`
+                console.log(storedName, storedPw, "content");
+            }else {
+                console.log(storedName, storedPw, "content");
+                alert('ERROR.');
+            }
+        })
+        
     </script>
 </body>
 
