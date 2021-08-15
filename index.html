@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurante</title>
+    <link rel="stylesheet" href="menu.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/main.css">
@@ -17,34 +18,62 @@
         <p>Los mejores platillos del pais</p>
     </header>
 
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Quienes somos</a></li>
-                <li><a href="#">Reservas</a></li>
-                <li><a href="#">Menu</a></li>
-            </ul>
-        </nav>
+    <nav>
+        <ul>
+            <li><a href="./index.html"> Inicio</a></li>
+            <li><a href="./about.html">  Quienes somos</a></li>
+            <li><a href="./menu.html">Menu</a></li>
+            <li><a href="./reservas.html">Reservas</a></li>
+        </ul>
+    </nav>
 
     <main>
         <div class="container">
             <section class="primer">
 
                 <img src="https://res.cloudinary.com/dt7qqtoem/image/upload/v1628303575/prueba_km3at4.jpg"
-                    alt="imagen 1">
-                <div class="primera">
+                    align="left" alt="imagen 1">
 
-                    <p>Quienes somos</p>
-                    <p>Somos un restaurante destacado por su calidad.</p>
-                </div>
+                <div class="primera">
+                    
+                    <h3>¿Quienes somos?</h3>
+                    <p>Somos un restaurante destacado por su calidad
+                        y su servicion de atencion al cliente, nuestro 
+                        mayor desempeño esta en la elaboracion de platillos
+                        de alto status para nuestros clientes de alto relieve
+                        nuestras espezialidades son los platillos tipicos
+                        tales como la milanesa, silpancho, chicharron, fricase
+                        y entre muchas otras delicias que puede encontrar en nuestro
+                        menu.</p>
+                    </div>
             </section>
 
             <section class="segundo">
-                <blockquote>
-                    <!--una resena sobre el restaurante -->
-                    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, culpa dolorum eveniet cupiditate fugiat in reprehenderit natus blanditiis delectus autem, voluptatum veritatis excepturi distinctio nisi, exercitationem magnam repellat libero nam?"
-                </blockquote>
-                <img src="https://res.cloudinary.com/dt7qqtoem/image/upload/v1628536004/user_xm5z8z.svg" alt="un critico">
+                <h3>A continuacion una de nuestras mejores reseñas</h3>
+                <p>"El trabajo del crítico es sencillo en más de un sentido. 
+                    Arriesgamos muy poco, y sin embargo usufructuamos de una
+                     posición situada por encima de quienes someten su trabajo 
+                     y su persona a nuestro juicio. Prosperamos gracias a 
+                     nuestras críticas negativas, que resultan divertidas 
+                     cuando se las escribe y cuando se las lee.
+                    Pero la cruda verdad que los críticos debemos enfrentar es
+                     que, en términos generales, la producción de basura 
+                     promedio es más valiosa que lo que nuestros artículos 
+                     pretenden señalar. Sin embargo, a veces el crítico 
+                     realmente arriesga algo, y eso sucede en nombre y en 
+                     defensa de algo nuevo.
+                    Anoche experimenté algo nuevo, una comida extraordinaria
+                     hecha por alguien único e inesperado. Decir que ese plato 
+                     y su cocinero pusieron a prueba mis preconceptos 
+                     equivaldría a incurrir en una subestimación grosera, 
+                     cuando lo cierto es que ambos lograron conmover lo más 
+                     profundo de mi ser.
+                    Antes de este suceso, nunca escondí mi desdén por el lema 
+                    del Chef Gusteau: “cualquiera puede cocinar”. Pero, me doy
+                     cuenta, recién ahora comprendo sus palabras. No cualquiera
+                      puede convertirse en un gran artista, pero un gran artista
+                       sí puede provenir de cualquier lugar."</p>
+                <img src="https://i.blogs.es/217318/ratatouille5/1366_2000.jpg" alt="un critico">
             </section>
 
             <section class="platillos">
@@ -115,29 +144,7 @@
             </section>
 
         </div>
-        <div class="reservas">
-            <!--en vez de una pantalla negra un fondo de una imagen  dentro de todo que haga resaltar la tabla de reservas-->
-            <p>Tabla de reservas</p>
-            <hr>
-            <div class="actual">
-                <label for="date">Date</label>
-                <input name="date" type="date" readonly value="08-08-2021">
-                <label for="time">Time</label>
-                <input name="time" type="time" readonly value="15:25">
-                <label for="seats">Seats</label>
-                <input name="seats" type="text" readonly value="5">
-            </div>
-            <form action="GET">
-                <input type="text" value="Name">
-                <input type="text" value="Telefono" maxlength="8" minlength="8">
-                <input type="email" value="Email">
-                <textarea name="notas" id="notas" cols="30" rows="10">
-
-                </textarea>
-
-                <input type="submit" value="enviar">
-            </form>
-        </div>
+       
     </main>
 
       <footer>

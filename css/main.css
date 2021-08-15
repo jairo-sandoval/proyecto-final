@@ -1,7 +1,8 @@
 /*body de index.html*/
 img{
-    width: 350px;
+    width: 50%;
 }
+
 
 a {
     text-decoration: none;
@@ -19,12 +20,28 @@ a {
     text-align: center;
 } 
 
+.primer img{
+    width: 100%;
+}
+
 .primer p{
     text-align: center;
+    text-align: justify;
+    padding: 50px;
 }
 
 .primer img{
     width: 100%;
+}
+
+.primera h3{
+    padding-top: 70px;
+    font-size: 30px;
+}
+
+.primera p{
+    font-size: 24px;
+    letter-spacing: 1px;
 }
 
 .segundo{
@@ -34,8 +51,18 @@ a {
     width: 100%;
 }
 
+.segundo h3{
+    padding: 20px;
+}
+
+.segundo p{
+    font-family: 'Times New Roman', Times, serif, cursive;
+    font-style: italic;
+    padding: 20px;
+}
+
 .segundo img{
-    background-color: white;
+    width: 100%;
 }
 
 .platillos{
