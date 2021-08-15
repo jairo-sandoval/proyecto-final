@@ -1,0 +1,112 @@
+body {
+    background: black;
+	overflow: visible;
+} 
+
+.image {
+	width: 100%;
+	height: 100%;
+}
+p {
+	width: 75%;
+	color:  white;
+    line-height: 1.6;
+}
+h1 {
+	color: white;
+	font-size: 60px;
+	text-align: center;
+	margin: auto;
+}
+h2 {
+	color: white;
+	font-size: 40px;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+#Header{
+    width: 100%;
+    height: 500px;
+    background-image: url('../img/menu.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: auto;
+    text-align: center;
+}
+
+#Header::before{
+    content: "";
+    width: 100%;
+    height: 500px;
+    background-color: #333;
+    position: absolute;
+    opacity: 0.7;
+}
+
+#Header h2{
+    position: relative;
+    font-size: 60px;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+
+#Header p{
+    position: relative;
+    font-size: 40px;
+    font-family: 'Pangolin', cursive;
+    width: 50%;
+    margin: 0 auto;
+    padding: 50px 0px 0px ;
+}
+
+
+
+/*body*/
+
+.chef {
+	display: flex;
+}
+.chef-img {
+	float: left;
+}
+.chefs {
+	float: right;
+	margin-top: 50px;
+	margin-right: 100px;
+	margin-left: 100px;
+	margin-bottom: 0px;
+}
+.container {
+	margin: 0px;
+}
+.father {
+	display: flex;
+}
+.child {
+	float: left;
+	margin: 100px;
+	width: 100%;
+}
+.child0 {
+	float: right;
+	width: 100%;
+}
+.image1 {
+	width: 100%;
+	height: 80%;
+}
+hr {
+
+}
+.paragraph {
+    padding-top: 20px;
+}
