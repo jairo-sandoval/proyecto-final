@@ -25,11 +25,8 @@
     background-color: #333;
     position: absolute;
     opacity: 0.7;
-<<<<<<< HEAD
-=======
     padding: 0px;
     margin: 0px;
->>>>>>> 2f3ebdbfc50d9d89a87986fc397bc0f896e0c1ad
 }
 
 #Header h2{
@@ -96,34 +93,14 @@ nav{
     width: 100%;
     background: #333; 
     position: sticky;
-<<<<<<< HEAD
-=======
     top: 0;
     z-index: 1;
     transition: .5s;
     justify-content: space-between;
->>>>>>> 2f3ebdbfc50d9d89a87986fc397bc0f896e0c1ad
 } 
 
 
 nav ul{
-<<<<<<< HEAD
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-}
-
-nav li {
-    width: 22%;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 25px;
-    padding: 20px; 
-    border-left: 1px solid white; 
-}
-
-=======
     display: flex;
     margin: auto;
     flex-direction: row;
@@ -143,20 +120,16 @@ nav ul li {
 }
 
 
->>>>>>> 2f3ebdbfc50d9d89a87986fc397bc0f896e0c1ad
 nav li:first-child{
     border-left: none;
 }
 
 nav li a {
     text-decoration: none;
-<<<<<<< HEAD
-=======
     text-align: center;
     display: block;
     width: 100%;
     cursor: pointer;
->>>>>>> 2f3ebdbfc50d9d89a87986fc397bc0f896e0c1ad
     color: white;
 }
 

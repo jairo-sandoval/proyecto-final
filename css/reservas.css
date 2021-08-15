@@ -37,6 +37,16 @@ form input{
     display: inline-block;
 }
 
+#checkbox1 {
+    display: inline;
+    margin-left: 50px;
+    margin-right: 0px;
+}
+#checkbox2 {
+    display: inline;
+    margin-left: 50px;
+    margin-right: 0px;
+}
 form label{
     padding-left: 50px;
     display: block;

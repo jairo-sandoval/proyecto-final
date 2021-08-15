@@ -17,19 +17,14 @@
         <p>Los mejores platillos del pais</p>
     </header>
     <nav>
-        <ul>
-            <a href="index.html">
-                <li>Inicio</li>
-            </a>
-            <a href="./about.html">
-                <li>Quienes somos</li>
-            </a>
-            <a href="./reservas.html"></a>
-            <li>Reservas</li></a>
-            <a href="./menu.html">
-                <li>Menu</li>
-            </a>
-        </ul>
+        
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Quienes somos</a></li>
+                <li><a href="#">Reservas</a></li>
+                <li><a href="#">Menu</a></li>
+            </ul>
+        
     </nav>
     <main>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, eligendi enim at fugit soluta modi
@@ -67,10 +62,10 @@
                 <input id="total" type="text" value="0" readonly>
                 <hr>
                 <label for="">Reservar mesa</label>
-                <label for="">si</label>
-                <input type="checkbox" name="" id="checkbox1">
-                <label for="">no</label>
-                <input id="checkbox" type="checkbox" name="" id="checkbox2">
+                <label for="checksi">si</label>
+                <input type="checkbox" name="checksi" id="checkbox1">
+                <label for="checkno">no</label>
+                <input type="checkbox" name="checkno" id="checkbox2">
 
                 <button type="submit">registrar</button>
             </form>
@@ -128,6 +123,8 @@
         var aux;
         function selectFunction(e) {
             document.getElementById('precioU').value = e.target.value
+            document.getElementById('precioT').value = e.target.value
+            document.getElementById('numero').value = "1"
         }
         function selectorPT(e) {
             document.getElementById('precioT').value = parseInt(document.getElementById('precioU').value)

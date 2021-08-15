@@ -94,7 +94,9 @@ article{
     width: 30%;
     display: inline-block;
     color: black;
-    
+    text-align: center;
+    background-color: white;  
+    border-radius: 10px;
 } 
 
 article img{
@@ -104,7 +106,6 @@ article img{
 
 
 article p {
-    position: relative;
     text-align: center;
     width: 60%;
     /*z index*/
@@ -134,46 +135,3 @@ article p {
 }
 
 
-/*mover abajo los valores estaticos*/
-form{
-    display: block;
-    padding-left: 50px;
-}
-
-.actual{
-    text-align: center;
-    margin: 20px;
-}
-
-.actual label {
-    padding-left: 10px;
-}
-
-
-form input{
-    display: flex;
-    margin-right: auto;
-    margin-left: auto;
-    border-radius: 8px;
-    background-color: rgb(207, 221, 226);
-}
-
-form label{
-    padding-left: 50px;
-    display: block;
-}
-
-textarea{
-    display: inline-block;
-    margin-left: 50px;
-    border-radius: 8px;
-    background-color: rgb(30, 159, 210);
-    color: white;
-}
-
-button[type="submit"]{
-    display: inline-block;
-    margin-left: 50px;
-    padding: auto;
-
-}

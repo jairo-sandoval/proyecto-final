@@ -49,24 +49,8 @@ const Comidas = [
     }
 ] 
 
-<<<<<<< HEAD
 const map = document.getElementById("menu")
 
-=======
-const newEat = {
-        title: "Milanesa",
-        price: 25,
-        stock: true,
-        img: 'https://cloudfront-us-east-1.images.arcpublishing.com/radiomitre/PEX3SUWOHRFAVOTBFRTM2VQSO4.jpg', 
-        info: `Rica milanesa hecha a base de pan molido carne machucada
-        acompañada de arroz graneado y su ensalada`
-    }
-Comidas.push(newEat)
-
-const map = document.getElementById("menu")
-
-
->>>>>>> 2f3ebdbfc50d9d89a87986fc397bc0f896e0c1ad
 const newMap = Comidas.map(item => {
     return `<article class="cards">
         <img src="${item.img}"/>
@@ -78,35 +62,6 @@ const newMap = Comidas.map(item => {
 
 map.innerHTML = newMap
 
-<<<<<<< HEAD
 // login 
-=======
->>>>>>> 2f3ebdbfc50d9d89a87986fc397bc0f896e0c1ad
-
-var form = document.getElementById('submit')
-form.addEventListener('submit', function(e){
-    e.preventDefault()
-    var nombre = document.getElementById('nombre')
-    console.log(nombre.value);
-<<<<<<< HEAD
-})
-
-console.log("")
 
 
-var ms = document.getElementById('mensaje')
-
-console.log(ms)
-
-
-
-function selectFunction(e) {
-    document.getElementById('precioU').value = e.target.value
-    var aux = document.getElementById('precioU')
-    console.log(aux.target.value)
-    document.getElementById('precioT').value = (parseInt(e.target.value) 
-    * document.getElementById('numero').value)
-}
-=======
-})
->>>>>>> 2f3ebdbfc50d9d89a87986fc397bc0f896e0c1ad
