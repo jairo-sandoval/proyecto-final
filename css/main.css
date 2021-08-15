@@ -11,14 +11,6 @@ a {
 
 .container section{
     display: block;
-    position: relative;
-}   
-
-.container section p{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
 }
 
 .primer {
@@ -89,14 +81,11 @@ a {
 
 
 
-
 article{
     width: 30%;
     display: inline-block;
     color: black;
-    text-align: center;
-    background-color: white;  
-    border-radius: 10px;
+    
 } 
 
 article img{
@@ -106,9 +95,9 @@ article img{
 
 
 article p {
+    position: relative;
     text-align: center;
     width: 60%;
-    /*z index*/
 }
 
 .huminta{
@@ -122,16 +111,25 @@ article p {
 }
 #hov:hover + #hidden{
     /*add a scrool por el */
-    z-index: -50%;
+    top: -20px;
     display: block;
     -webkit-animation: moving 2s infinite;
     animation: moving 2s infinite;
 }
 
-.reservas p{
-    font-size: 1.5rem;
-    font-weight: 600;
-    padding-left: 20px;
+
+form{
+    display: block;
 }
 
+.actual{
+    text-align: center;
+}
 
+.actual label {
+    padding-left: 10px;
+}
+
+form input{
+    display: block;
+}

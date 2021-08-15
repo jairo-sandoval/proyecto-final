@@ -1,7 +1,7 @@
 /*estilos iniciales de todas las paginas, cada una tendra su propia estilizacion si esq lo necesita */
 
 html{
-    font-family: Helvetica;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     color: white;
     font-size: 20px;
 }
@@ -116,7 +116,7 @@ footer {
 
 
 footer  img{
-    width: 35px;
+    width: 25px;
 }
 
 
@@ -137,8 +137,8 @@ footer  img{
 }
 
 
-.mapa iframe{
-    margin-bottom: 20px;
+.mapa img{
+    width: 40%;
 }
 
 .mapa p{
