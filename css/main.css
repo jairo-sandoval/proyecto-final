@@ -76,8 +76,8 @@ a {
 .platillos{
     background-image: url(https://res.cloudinary.com/dt7qqtoem/image/upload/v1628303696/fondo_nf9bbc.jpg);
     background-size: 100%;
-    height: 1200px;
     position: relative;
+    text-align: center;
 }
 
 .platillos p{
@@ -88,7 +88,16 @@ a {
 }
 
 
+.platosP{
+    font-size: 1.2rem;
+    padding: 20px;
+    text-transform: uppercase;
+}
 
+.mejoresPlatillos{
+    padding: 20px;
+
+}
 
 article{
     width: 30%;
@@ -97,35 +106,19 @@ article{
     text-align: center;
     background-color: white;  
     border-radius: 10px;
+    padding: 20px;
 } 
 
 article img{
     border-radius: 12px;
 }
 
-
+.etiquetas{
+    text-transform: uppercase;
+}
 
 article p {
     text-align: center;
-    width: 60%;
-    /*z index*/
-}
-
-.huminta{
-    display: block;
-    position: relative;
-    left: 40%;
-}
-
-#hidden{
-    display: none;
-}
-#hov:hover + #hidden{
-    /*add a scrool por el */
-    z-index: -50%;
-    display: block;
-    -webkit-animation: moving 2s infinite;
-    animation: moving 2s infinite;
 }
 
 .reservas p{
