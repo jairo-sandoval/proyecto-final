@@ -49,18 +49,7 @@ const Comidas = [
     }
 ] 
 
-const newEat = {
-        title: "Milanesa",
-        price: 25,
-        stock: true,
-        img: 'https://cloudfront-us-east-1.images.arcpublishing.com/radiomitre/PEX3SUWOHRFAVOTBFRTM2VQSO4.jpg', 
-        info: `Rica milanesa hecha a base de pan molido carne machucada
-        acompañada de arroz graneado y su ensalada`
-    }
-Comidas.push(newEat)
-
 const map = document.getElementById("menu")
-
 
 const newMap = Comidas.map(item => {
     return `<article class="cards">
@@ -73,10 +62,6 @@ const newMap = Comidas.map(item => {
 
 map.innerHTML = newMap
 
+// login 
 
-var form = document.getElementById('submit')
-form.addEventListener('submit', function(e){
-    e.preventDefault()
-    var nombre = document.getElementById('nombre')
-    console.log(nombre.value);
-})
+
