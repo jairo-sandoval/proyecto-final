@@ -19,10 +19,10 @@
     <nav>
         
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Quienes somos</a></li>
-                <li><a href="#">Reservas</a></li>
-                <li><a href="#">Menu</a></li>
+                <li><a href="./index.html"> Inicio</a></li>
+            <li><a href="./about.html"> Quienes somos</a></li>
+            <li><a href="./menu.html">Menu</a></li>
+            <li><a href="./reservas.html">Reservas</a></li>
             </ul>
         
     </nav>
@@ -37,7 +37,7 @@
             <form id="form">
                 <div class="nombre">
                     <label for="nombre">Nombre:</label>
-                    <input id="nombre" name="nombre" type="text" placeholder="Juanito Perez">
+                    <input id="nombre" name="nombre" type="text" placeholder="Juanito Perez" required>
                 </div>
                 <div id="mensaje">
 
@@ -65,60 +65,71 @@
                 <label for="checksi">si</label>
                 <input type="checkbox" name="checksi" id="checkbox1">
                 <label for="checkno">no</label>
-                <input type="checkbox" name="checkno" id="checkbox2">
+                <input type="checkbox" name="checkno" id="checkbox2" checked>
 
                 <button type="submit">registrar</button>
             </form>
         </div>
     </main>
-    <footer>
-        <p class="titulo">Restaurante</p>
-        <br>
-        <div class="mapa">
-            <p>Donde nos encontramos</p>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15230.207135119437!2d-66.20101865000001!3d-17.3852878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbo!4v1628555007562!5m2!1sen!2sbo"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-        <div class="menu">
-            <div class="navegador">
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Quienes somos</a></li>
-                    <li><a href="#">Reservas</a></li>
-                    <li><a href="#">Menu</a></li>
-                </ul>
+    <footer class="site-footer">
+        <div class="container-footer">
+          <div class="row1">
+            <div class="colsrow1">
+              <h6>Donde nos encontramos</h6>
+               <iframe class = "text-justify" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d30172.927342492836!2d-65.2592666!3d-19.036639!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sbo!4v1628555230515!5m2!1ses!2sbo" width="550" height="160" style="border:0;" allowfullscreen="" loading="lazy"></iframe> 
             </div>
-
-            <p>Contactanos</p>
-            <span class="contacto">
-
-                <p>Email:</p> <a href="emailto:example@example.com">example@example.com</a>
-            </span>
-            <span class="contacto">
-
-                <p>Telefono:</p> <a href="tel:99999999">+123 99999999</a>
-            </span>
-            <span class="contacto">
-                <p>Direccion:</p>
-                <a href="#">Av. X entre Av. Y y Calle Z Nro 10, Cochabamba Bolivia</a>
-            </span>
-            <section>
-                <p>Encuentranos en:</p>
-                <div class="redes">
-                    <a href="https://www.facebook.com/" target="_blank"><img
-                            src="https://res.cloudinary.com/dt7qqtoem/image/upload/v1624737155/facebook_a3ydxo.svg"
-                            alt="facebook"></a>
-                    <a href="https://twitter.com/" target="_blank"><img
-                            src="https://res.cloudinary.com/dt7qqtoem/image/upload/v1624737155/twitter_vfdl1m.svg"
-                            alt="twitter"></a>
-                    <a href="https://www.instagram.com/" target="_blank"><img
-                            src="https://res.cloudinary.com/dt7qqtoem/image/upload/v1624737155/instagram_qjmkac.svg"
-                            alt="instagram"></a>
-                </div>
-            </section>
+  
+            <div class="colsrow1">
+               <h6>Quick Links</h6>
+              <ul class="footer-links">
+  
+                  <ul>
+                      <li><a href="#">Inicio</a></li>
+                      <li><a href="#">Quienes somos</a></li>
+                      <li><a href="#">Reservas</a></li>
+                      <li><a href="#">Menu</a></li>
+                  </ul>
+  
+              </ul>
+            </div>
+  
+            <div class="colsrow1">
+              <h6>Contactanos</h6>
+              <ul class="footer-links">
+                   <li><p>Email:</p> <a href="emailto:example@example.com">example@example.com</a></li> 
+                   <li><p>Telefono:</p> <a href="tel:99999999">+123 99999999</a></li>
+                   <li> <p>Direccion:</p>
+                  <a href="#">Av. X entre Av. Y y Calle Z Nro 10, Cochabamba Bolivia</a></li>
+              </ul>           
+            </div>
+          </div>
+          <hr>
         </div>
-    </footer>
+        <div class="container">
+          <div class="row2">
+            <div class="colsrow2">
+              <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by 
+           <a href="#">Restaurant</a>.
+              </p>
+            </div>
+  
+            <div class="colsrow2">
+              <ul class="social-icons">
+                  <li><a href="https://www.facebook.com/" target="_blank" class="facebook"><img
+                      src="https://res.cloudinary.com/dt7qqtoem/image/upload/v1624737155/facebook_a3ydxo.svg"
+                      alt="facebook"></a></li>
+                  <li><a href="https://twitter.com/" target="_blank" class="twitter"><img
+                      src="https://res.cloudinary.com/dt7qqtoem/image/upload/v1624737155/twitter_vfdl1m.svg"
+                      alt="twitter"></a></li>
+                  <li><a href="https://www.instagram.com/" target="_blank" class="instagram"><img
+                      src="https://res.cloudinary.com/dt7qqtoem/image/upload/v1624737155/instagram_qjmkac.svg"
+                      alt="instagram"></a> </li>
+              </ul>
+            </div>
+  
+          </div>
+        </div>
+  </footer>
     <script>
         var aux;
         function selectFunction(e) {
