@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,47 +8,66 @@
     <title>Restaurante</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="./css/reservas.css">
 </head>
+
 <body>
     <header>
-        <img src="#" alt="imagen de fondo">
-        <h1>Reservas</h1>
+        <h1>Restaurante</h1>
+        <p>Los mejores platillos del pais</p>
     </header>
     <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="#">Quienes somos</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Reservas</a></li>
-        </ul>
+        
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Quienes somos</a></li>
+                <li><a href="#">Reservas</a></li>
+                <li><a href="#">Menu</a></li>
+            </ul>
+        
     </nav>
     <main>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, eligendi enim at fugit soluta modi accusantium consectetur facere reiciendis earum minus, nisi deleniti magni repudiandae suscipit sint, id ratione tenetur.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, eligendi enim at fugit soluta modi
+            accusantium consectetur facere reiciendis earum minus, nisi deleniti magni repudiandae suscipit sint, id
+            ratione tenetur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates nihil distinctio quo
+            iure vero, cupiditate, consequatur eius repellendus, incidunt in error soluta inventore qui perspiciatis
+            repellat praesentium esse ex reiciendis?</p>
         <div class="container">
-            
-            <form action="GET">
+            <p class="tabla">Reservaciones</p>
+            <form id="form">
                 <div class="nombre">
                     <label for="nombre">Nombre:</label>
-                    <input name="nombre" type="text">
+                    <input id="nombre" name="nombre" type="text" placeholder="Juanito Perez">
+                </div>
+                <div id="mensaje">
+
                 </div>
                 <div class="pedido">
-                    <section>
-                        <textarea name="" id="" cols="30" rows="10">
-
-                        </textarea>
-                        <input name="precioU" type="text" value="" readonly>                        
-                        <input name="precionT" type="text" value="" readonly>
-                        <label for="total">total</label>
-                        <input type="text" value="" readonly>                        
-                    </section>
+                    <p>Pedido</p>
+                    <select name="" id="elige" onchange="selectFunction(event)">
+                        <option disabled selected>Elige una opcion</option>
+                        <option value="20">Milanesa</option>
+                        <option value="25">Silpancho</option>
+                        <option value="20">Pique Macho</option>
+                        <option value="30">Chicharron</option>
+                        <option value="15">Fricase</option>
+                        <option value="25">Pollo al horno</option>
+                    </select>
+                    <input id="numero" type="number" min="1" value="0" max="20" onchange="selectorPT(event)">
+                    <input id="precioU" name="precioU" type="text" value="0.0" readonly>
+                    <input id="precioT" name="precioT" type="text" value="0.0" readonly>
+                    <input type="button" value="agregar" id="agregar" onclick="agregacion(event)">
                 </div>
-                <label for="">reservar mesa</label>
-                <label for="">si</label>
-                <input type="checkbox" name="" id="">
-                <label for="">no</label>
-                <input type="checkbox" name="" id="">
+                <label for="total">total</label>
+                <input id="total" type="text" value="0" readonly>
+                <hr>
+                <label for="">Reservar mesa</label>
+                <label for="checksi">si</label>
+                <input type="checkbox" name="checksi" id="checkbox1">
+                <label for="checkno">no</label>
+                <input type="checkbox" name="checkno" id="checkbox2">
 
-                <input type="submit" value="tomar ficha">
+                <button type="submit">registrar</button>
             </form>
         </div>
     </main>
@@ -56,18 +76,20 @@
         <br>
         <div class="mapa">
             <p>Donde nos encontramos</p>
-            <img src="https://res.cloudinary.com/dt7qqtoem/image/upload/v1628305202/huminta_zy0ltb.jpg" alt="mapa">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15230.207135119437!2d-66.20101865000001!3d-17.3852878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbo!4v1628555007562!5m2!1sen!2sbo"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
         <div class="menu">
             <div class="navegador">
                 <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Quienes somos</a></li>
-                <li><a href="#">Reservas</a></li>
-                <li><a href="#">Menu</a></li>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Quienes somos</a></li>
+                    <li><a href="#">Reservas</a></li>
+                    <li><a href="#">Menu</a></li>
                 </ul>
             </div>
-            
+
             <p>Contactanos</p>
             <span class="contacto">
 
@@ -85,17 +107,48 @@
                 <p>Encuentranos en:</p>
                 <div class="redes">
                     <a href="https://www.facebook.com/" target="_blank"><img
-                        src="https://res.cloudinary.com/dt7qqtoem/image/upload/v1624737155/facebook_a3ydxo.svg"
-                        alt="facebook"></a>
+                            src="https://res.cloudinary.com/dt7qqtoem/image/upload/v1624737155/facebook_a3ydxo.svg"
+                            alt="facebook"></a>
                     <a href="https://twitter.com/" target="_blank"><img
-                        src="https://res.cloudinary.com/dt7qqtoem/image/upload/v1624737155/twitter_vfdl1m.svg"
-                        alt="twitter"></a>
+                            src="https://res.cloudinary.com/dt7qqtoem/image/upload/v1624737155/twitter_vfdl1m.svg"
+                            alt="twitter"></a>
                     <a href="https://www.instagram.com/" target="_blank"><img
-                        src="https://res.cloudinary.com/dt7qqtoem/image/upload/v1624737155/instagram_qjmkac.svg"
-                        alt="instagram"></a>
-                   </div>
+                            src="https://res.cloudinary.com/dt7qqtoem/image/upload/v1624737155/instagram_qjmkac.svg"
+                            alt="instagram"></a>
+                </div>
             </section>
         </div>
     </footer>
+    <script>
+        var aux;
+        function selectFunction(e) {
+            document.getElementById('precioU').value = e.target.value
+            document.getElementById('precioT').value = e.target.value
+            document.getElementById('numero').value = "1"
+        }
+        function selectorPT(e) {
+            document.getElementById('precioT').value = parseInt(document.getElementById('precioU').value)
+                * parseInt(document.getElementById('numero').value)
+        }
+
+        function agregacion(e) {
+            if (parseInt(document.getElementById('precioT').value) != 0) {
+                aux = parseInt(document.getElementById('total').value)
+                var sel = document.getElementById("elige")
+                var texto = sel.options[sel.selectedIndex].text
+                var ms = document.getElementById('mensaje')
+                ms.innerHTML += "<p>" + texto + ", cant:" +
+                    document.getElementById('numero').value + ", precio u:" +
+                    document.getElementById('precioU').value + "Bs, precio t:" +
+                    document.getElementById('precioT').value + "Bs</p>"
+                document.getElementById('total').value = parseInt(document.getElementById('total').value)
+                    + parseInt(document.getElementById('precioT').value)
+            } else {
+                alert("Debe realizar un pedido correcto")
+            }
+
+        }
+    </script>
 </body>
+
 </html>
